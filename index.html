@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+<script defer src="main.js"></script></head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <h1>📝 Todo List</h1>
+      <div id="projects-list"></div>
+      <button id="add-project-btn">+ New Project</button>
+    </aside>
+
+    <main class="main">
+      <div class="main-header">
+        <h2 id="project-title">Default</h2>
+        <button id="add-todo-btn">+ Add Todo</button>
+      </div>
+      <div id="todos-list"></div>
+    </main>
+
+  </div>
+
+  <dialog id="project-dialog">
+    <form id="project-form">
+      <h2>New Project</h2>
+      <label>Project Name
+        <input type="text" id="project-name-input" required>
+      </label>
+      <div class="form-buttons">
+        <button type="submit">Create</button>
+        <button type="button" id="cancel-project-btn">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="todo-dialog">
+    <form id="todo-form">
+      <h2>Add Todo</h2>
+      <label>Title
+        <input type="text" id="todo-title" required>
+      </label>
+      <label>Description
+        <input type="text" id="todo-description">
+      </label>
+      <label>Due Date
+        <input type="date" id="todo-due-date" required>
+      </label>
+      <label>Priority
+        <select id="todo-priority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </label>
+      <label>Notes
+        <input type="text" id="todo-notes">
+      </label>
+      <div class="form-buttons">
+        <button type="submit">Add</button>
+        <button type="button" id="cancel-todo-btn">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+
+</body>
+</html>
