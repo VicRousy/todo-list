@@ -220,10 +220,12 @@ dialog input, dialog select {
   }
 
   .sidebar {
-    padding: 16px;
-    flex-direction: row;
-    overflow-x: auto;
-    gap: 8px;
+    padding: 12px;
+   flex-direction: row;
+   overflow-x: auto;
+   gap: 8px;
+   flex-wrap: nowrap;
+   max-height: 60px;
   }
 
   .sidebar h1 {
