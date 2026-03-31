@@ -221,46 +221,55 @@ dialog input, dialog select {
 
   .sidebar {
     padding: 12px;
-   flex-direction: row;
-   overflow-x: auto;
-   gap: 8px;
-   flex-wrap: nowrap;
-   max-height: 60px;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 8px;
+    height: auto;
+    min-height: 50px;
   }
 
   .sidebar h1 {
-    font-size: 18px;
-    margin-bottom: 0;
-    white-space: nowrap;
+    display: none;
   }
 
   .project-btn {
     white-space: nowrap;
     padding: 8px 12px;
-    font-size: 14px;
+    font-size: 13px;
+    min-width: fit-content;
   }
 
   #add-project-btn {
     white-space: nowrap;
     margin-top: 0;
+    padding: 8px 12px;
+    font-size: 13px;
   }
 
   .main {
     padding: 16px;
+    width: 100%;
   }
 
   .main-header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 12px;
   }
 
   .main-header h2 {
-    font-size: 22px;
+    font-size: 20px;
+    flex: 1;
+  }
+
+  #add-todo-btn {
+    white-space: nowrap;
   }
 
   dialog {
     width: 90%;
+    max-width: 90vw;
     padding: 20px;
   }
 
@@ -268,6 +277,7 @@ dialog input, dialog select {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+    padding: 12px 16px;
   }
 
   .todo-right {
